@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Format Experiment</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body>
+    <header class="bg-blue-500 text-white text-center p-5">
+        <h1 class="text-4xl"><a href="/" class="no-underline">Image Format Experiment</a></h1>
+    </header>
+    <main class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
+        <div class="bg-gray-200 p-3 rounded-lg shadow-lg hover:bg-gray-300 transition ease-in-out">
+            <img src="images2/space.jpg" alt="Example 1" class="w-full" />
+            <p>Space JPG</p>
+            <div class="image-info"></div>
+        </div>
+        <div class="bg-gray-200 p-3 rounded-lg shadow-lg hover:bg-gray-300 transition ease-in-out">
+            <img src="images2/space.webp" alt="Example 1" class="w-full" />
+            <p>Space WebP</p>
+            <div class="image-info"></div>
+        </div>
+        <div class="bg-gray-200 p-3 rounded-lg shadow-lg hover:bg-gray-300 transition ease-in-out">
+            <img src="images2/space.avif" alt="Example 1" class="w-full" />
+            <p>Space AVIF</p>
+            <div class="image-info"></div>
+        </div>
+        <div class="bg-gray-200 p-5 rounded-lg shadow-lg hover:bg-gray-300 transition ease-in-out">
+            <p class="font-bold text-lg">Quin és el format més òptim per aquest tipus d’imatge i per què? Què passa quan
+                la
+                guardem en format JPEG? Si la nostra web té un fons blanc, quin format seria el més òptim i per què?</p>
+            <p>En un fons amb transparència el format més òptim és png, ja que permet transparència, cosa que els altres
+                formats no. Quan la guardem en format JPEG passarà a tenir un color blanc de fons perdent aquesta
+                flexibilitat
+                de no tenir que canviar el color de fons. Si una pàgina WEB té un color de fons blanc llavors la millor
+                opció
+                sería la imatge amb JPEG, ja que pesa menys i millora el temps de càrrega de la pàgina.</p>
+        </div>
+    </main>
+    <div class="bg-gray-200 p-3 rounded-lg shadow-lg hover:bg-gray-300 transition ease-in-out mx-10 mb-10">
+        <table class="table-auto w-full border-collapse border border-gray-300 text-center">
+            <thead class="bg-gray-100">
+                <tr>
+                    <th class="border border-gray-300 px-4 py-2">Nom Imatge</th>
+                    <th class="border border-gray-300 px-4 py-2">Mida JPG</th>
+                    <th class="border border-gray-300 px-4 py-2">Mida WebP</th>
+                    <th class="border border-gray-300 px-4 py-2">Reducció %</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="hover:bg-gray-50">
+                    <td class="border border-gray-300 px-4 py-2">Space</td>
+                    <td class="border border-gray-300 px-4 py-2">2795.48 KB</td>
+                    <td class="border border-gray-300 px-4 py-2">38.58 KB</td>
+                    <td class="border border-gray-300 px-4 py-2">98,62%</td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table-auto w-full border-collapse border border-gray-300 text-center mt-4">
+            <thead class="bg-gray-100">
+                <tr>
+                    <th class="border border-gray-300 px-4 py-2">Nom Imatge</th>
+                    <th class="border border-gray-300 px-4 py-2">Mida JPG</th>
+                    <th class="border border-gray-300 px-4 py-2">Mida AVIF</th>
+                    <th class="border border-gray-300 px-4 py-2">Reducció %</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="hover:bg-gray-50">
+                    <td class="border border-gray-300 px-4 py-2">Space</td>
+                    <td class="border border-gray-300 px-4 py-2">2795.48 KB</td>
+                    <td class="border border-gray-300 px-4 py-2">9.36 KB</td>
+                    <td class="border border-gray-300 px-4 py-2">99,66%</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="scripts/main.js"></script>
+</body>
+
+</html>

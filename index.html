@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Format Experiment</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body>
+  <header class="bg-blue-500 text-white text-center p-5">
+    <h1 class="text-4xl"><a href="/" class="no-underline">Image Format Experiment</a></h1>
+  </header>
+  <h1 class="text-center text-3xl font-bold mt-12 uppercase text-blue-700">Formats Antics</h1>
+  <main class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-5">
+    <div class="bg-gray-200 p-3 rounded-lg shadow-lg hover:bg-gray-300 transition ease-in-out">
+      <a href="logotip.html">
+        <img src="images/logotip.png" alt="Example 1" class="w-full" />
+        <div class="image-info"></div>
+      </a>
+    </div>
+    <div class="bg-gray-200 p-3 rounded-lg shadow-lg hover:bg-gray-300 transition ease-in-out">
+      <a href="JamesWebbImg.html">
+        <img src="images/JamesWebbImgDetallada.jpeg" alt="Example 2" class="w-full" />
+        <div class="image-info"></div>
+      </a>
+    </div>
+    <div class="bg-gray-200 p-3 rounded-lg shadow-lg hover:bg-gray-300 transition ease-in-out">
+      <a href="postaDeSol.html">
+        <img src="images/postaDeSol.jpg" alt="Example 3" class="w-full" />
+        <div class="image-info"></div>
+      </a>
+    </div>
+    <div class="bg-gray-200 p-3 rounded-lg shadow-lg hover:bg-gray-300 transition ease-in-out">
+      <a href="transparency.html">
+        <img src="images/transparency.png" alt="Example 3" class="w-full" />
+        <div class="image-info"></div>
+      </a>
+    </div>
+    <div class="bg-gray-200 p-3 rounded-lg shadow-lg hover:bg-gray-300 transition ease-in-out">
+      <a href="animat.html">
+        <img src="images/animat.gif" alt="Example 3" class="w-full" />
+        <div class="image-info"></div>
+      </a>
+    </div>
+    <div class="bg-gray-200 p-5 rounded-lg shadow-lg hover:bg-gray-300 transition ease-in-out">
+      <p class="font-bold text-lg">1. Què t’indica Lighthouse sobre el rendiment d’imatges de les teves pàgines? Quins
+        són els principals problemes? Quines recomanacions ofereix?</p>
+      <p>Em diu que faig servir formats vells, causant que la imatge pesi més de lo necessari, entre altres tambe diu
+        que faci servir mides fixes per millorar la qualitat.</p>
+      <p class="font-bold text-lg">2. Simula una connexió lenta 3G i analitza la càrrega de les imatges. Què observes?
+      </p>
+      <p>Les imatges tarden molt més en carregar-se i et dona temps a veure com les imatges que pesen menys es carreguen
+        i renderitzen abans que les imatges que pesen més.</p>
+    </div>
+  </main>
+  <hr>
+  <h1 class="text-center text-3xl font-bold mt-12 uppercase text-blue-700">Formats Moderns</h1>
+  <section class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-5">
+    <div class="bg-gray-200 p-3 rounded-lg shadow-lg hover:bg-gray-300 transition ease-in-out">
+      <a href="city.html">
+        <img src="images2/city.jpg" alt="Example 1" class="w-full" />
+        <div class="image-info"></div>
+      </a>
+    </div>
+    <div class="bg-gray-200 p-3 rounded-lg shadow-lg hover:bg-gray-300 transition ease-in-out">
+      <a href="space.html">
+        <img src="images2/space.jpg" alt="Example 2" class="w-full" />
+        <div class="image-info"></div>
+      </a>
+    </div>
+    <div class="bg-gray-200 p-3 rounded-lg shadow-lg hover:bg-gray-300 transition ease-in-out">
+      <a href="mountain.html">
+        <img src="images2/mountain.jpg" alt="Example 3" class="w-full" />
+        <div class="image-info"></div>
+      </a>
+    </div>
+    <div class="bg-gray-200 p-5 rounded-lg shadow-lg hover:bg-gray-300 transition ease-in-out">
+      <p class="font-bold text-lg py-2">Explica el que has pogut observar, les diferències, si AVIF és una bona
+        substitució
+        per a WebP, etc.</p>
+      <p>He pogut veure que els formats moderns com WebP i AVIF, són unes alternatives clau per poder crear
+        pàgines WEB
+        mantenint un bon performance de la pàgina i optimitzant molt considerablement el pes de les imatges i GIFs que
+        puguin contenir de base. <br>AVIF sería una molt bona substitució de WebP ja que redueix bastant
+        més el pes de
+        les imatges mantenint la mateixa qualitat que WebP i en alguns casos millor qualitat, per tant des del meu punt
+        de vista sería un molt bon substitut de WebP</p>
+    </div>
+  </section>
+  <script src="scripts/main.js"></script>
+</body>
+
+</html>

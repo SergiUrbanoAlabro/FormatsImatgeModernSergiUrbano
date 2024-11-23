@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Image Format Experiment</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.16/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/main.css" />
+</head>
+
+<body>
+  <header class="bg-blue-500 text-white text-center p-5">
+    <h1 class="text-4xl"><a href="/" class="no-underline">Image Format Experiment</a></h1>
+  </header>
+  <main class="text-base text-center p-10 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-5">
+    <div class="bg-gray-200 p-3 rounded-lg shadow-lg hover:bg-gray-300 transition ease-in-out">
+      <img src="images/postaDeSol.jpg" alt="Example 1" class="w-full" />
+      <p>Posta de Sol Normal JPG</p>
+      <div class="image-info"></div>
+    </div>
+    <div class="bg-gray-200 p-3 rounded-lg shadow-lg hover:bg-gray-300 transition ease-in-out">
+      <img src="images/postaDeSol80.jpg" alt="Example 1" class="w-full" />
+      <p>Posta de Sol Reduit a 80 JPG</p>
+      <div class="image-info"></div>
+    </div>
+    <div class="bg-gray-200 p-3 rounded-lg shadow-lg hover:bg-gray-300 transition ease-in-out">
+      <img src="images/postaDeSol50.jpg" alt="Example 1" class="w-full" />
+      <p>Posta de Sol Reduit a 50 JPG</p>
+      <div class="image-info"></div>
+    </div>
+    <div class="bg-gray-200 p-3 rounded-lg shadow-lg hover:bg-gray-300 transition ease-in-out">
+      <img src="images/postaDeSol25.jpg" alt="Example 1" class="w-full" />
+      <p>Posta de Sol Reduit a 25 JPG</p>
+      <div class="image-info"></div>
+    </div>
+    <div class="bg-gray-200 p-3 rounded-lg shadow-lg hover:bg-gray-300 transition ease-in-out">
+      <img src="images/postaDeSol.gif" alt="Example 1" class="w-full" />
+      <p>Posta de Sol GIF</p>
+      <div class="image-info"></div>
+    </div>
+    <div class="bg-gray-200 p-3 rounded-lg shadow-lg hover:bg-gray-300 transition ease-in-out">
+      <img src="images/postaDeSol.png" alt="Example 1" class="w-full" />
+      <p>Posta de Sol PNG</p>
+      <div class="image-info"></div>
+    </div>
+    <div class="bg-gray-200 p-3 rounded-lg shadow-lg hover:bg-gray-300 transition ease-in-out">
+      <img src="images/postaDeSol.webp" alt="Example 1" class="w-full" />
+      <p>Posta de Sol webP</p>
+      <div class="image-info"></div>
+    </div>
+    <div class="bg-gray-200 p-5 rounded-lg shadow-lg hover:bg-gray-300 transition ease-in-out">
+      <p class="font-bold text-lg">Quin format és el més òptim per aquest tipus d’imatge i per què? Amb quin nivell de
+        compressió no es perd qualitat visible? Podem reduir la mida encara més sense perdre qualitat? Què passaria si
+        desem la imatge diverses vegades en format JPEG?</p>
+      <p>En el cas d'aquesta imatge la millor opció sería JPEG o JPG, ja que aquests formats permeten mantenir un gran
+        numero de detalls i a no ser que comprimeixis de més la imatge, contindrà la millor qualitat possible, tot i
+        així la imatge resultarà més pesada. No es perd la qualitat quan fas un nivell baix de compressió, ja que la
+        diferència és molt mínima i a no ser que vagis molt al detall i amb zoom no ho veuràs. Si guardes la imatge
+        varies vegades en JPEG et trobaràs que acumulativament anirà perdent la seva qualitat d'imatge</p>
+    </div>
+    <div class="bg-gray-200 p-5 rounded-lg shadow-lg hover:bg-gray-300 transition ease-in-out">
+      <h2 class="text-3xl font-bold uppercase">Comparació</h2>
+      <table class="table-auto border-collapse border border-gray-300 text-center">
+        <thead class="bg-gray-100 border-b border-gray-300">
+          <tr>
+            <th class="border border-gray-300 px-4 py-2">Nom</th>
+            <th class="border border-gray-300 px-4 py-2">Mida JPG</th>
+            <th class="border border-gray-300 px-4 py-2">Mida WebP</th>
+            <th class="border border-gray-300 px-4 py-2">% Reducció</th>
+          </tr>
+        </thead>
+        <tbody id="table-body">
+          <tr class="hover:bg-gray-50">
+            <td class="border border-gray-300 px-4 py-2">Posta de Sol</td>
+            <td class="border border-gray-300 px-4 py-2">330.25 KB</td>
+            <td class="border border-gray-300 px-4 py-2">54.53 KB</td>
+            <td class="border border-gray-300 px-4 py-2">83,48%</td>
+          </tr>
+        </tbody>
+      </table>
+
+    </div>
+  </main>
+  <script src="scripts/main.js"></script>
+  <script type="module" src="scripts/comparar.js"></script>
+</body>
+
+</html>
